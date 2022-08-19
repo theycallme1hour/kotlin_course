@@ -1,13 +1,17 @@
-package com.example.work
+package com.example
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import androidx.appcompat.app.AppCompatActivity
+import com.example.work.R
+
 
 class MainActivity : AppCompatActivity() {
     var counter=0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        Log.d(tag: "MyLog", mgs "OnCreate")
     }
     override fun onStart() {
 super.onStart()
